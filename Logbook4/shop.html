@@ -1,0 +1,41 @@
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Shopping Page</title>
+ </head>
+ <body>
+  <form  action="size.php" method="post">
+   Select the qty of widgets you require
+   <select id= "selqty" name="selqty" onclick="display()">
+		<option value="1.00">1</option>
+		<option value="2.00">2</option>
+		<option value="3.00">3</option>
+		<option value="4.00">4</option>
+		<option value="5.00">5</option>
+   </select>
+   <br/><br/>
+   <input type="submit" value="Buy"/>
+  </form>
+
+  <!-- No need to display this anymore :(
+    <p id="displayCost"></p>
+    <script type="application/javascript">
+     //Declaring constants and variables
+     const cost = 15.75;
+     const list = document.getElementById("selqty"); //Storing the <select> element from the html file
+     var item;
+     var total;
+
+     //The function is called every time the user clicks on the <select> element, in order to make the display dynamic
+     function display()
+     {
+       item = list[list.selectedIndex].value; //Getting the currently chosen value of the <select> element
+       total = item * cost;
+       document.getElementById("displayCost").innerHTML = "The cost of one item: £" + cost + "<br/>The total cost of your purchase: £" + total; //Adding content to the <p> tag
+     }
+     //Calling the function to ensure the data is displayed when loading the page
+     display();
+    </script>
+  -->
+ </body>
+</html>
