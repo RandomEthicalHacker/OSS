@@ -1,4 +1,4 @@
-<?
+<?php
   switch ($_POST["radcourse"])
   {
     case "HNC":
