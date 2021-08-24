@@ -1,9 +1,13 @@
 <?php
-  /*
+
   //The hidden fields method
+  /*
   $qty = $_POST['selqty'];
+
   $size = $_POST['selsize'];
+
   $colour = $_POST['selcolour'];
+
   switch ($size) {
 
     case 'Small':
@@ -41,17 +45,21 @@
   {
     echo "<h2> The selected colour is $colour.</h2>";
   }
+
   if(isset($total) && $total != "Undefined")
   {
     echo "<h2><hr/> The total price of your purchase is: £" . $total . "</h2>";
   }
   */
 
-  /*
   //The cookie method
+  /*
   $qty = $_COOKIE['selqty'];
+
   $size = $_COOKIE['selsize'];
+
   $colour = $_POST['selcolour'];
+
   switch ($size) {
 
     case 'Small':
@@ -89,6 +97,7 @@
   {
     echo "<h2> The selected colour is $colour.</h2>";
   }
+
   if(isset($total) && $total != "Undefined")
   {
     echo "<h2><hr/> The total price of your purchase is: £" . $total . "</h2>";
@@ -97,12 +106,15 @@
 
   //The session method
   session_start();
+
   $qty = $_SESSION['selqty'];
-  $size = $_SESSION['selsize'];
   $colour = $_POST['selcolour'];
+  $size = $_SESSION['selsize'];
+
   switch ($size) {
 
     case 'Small':
+
       $total = $qty * 15.75;
       break;
 
@@ -141,5 +153,4 @@
   {
     echo "<h2><hr/> The total price of your purchase is: £" . $total . "</h2>";
   }
-
 ?>

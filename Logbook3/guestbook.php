@@ -16,16 +16,14 @@
 <?php
     if(isset($_POST['note']))
     {
-       // Substitute your login in place of "yourLogin"
-       $fp = fopen("yourLogin.txt","a");
+       $fp = fopen("guestbook.txt","a");
        fputs($fp,nl2br($_POST['note']).'<br>');
        fclose($fp);
     }
 ?>
 <h2>The entries so far:</h2>
 <?php
-    // Substitute your login in place of "yourLogin"
- @ReadFile("yourLogin.txt")
+ @ReadFile("guestbook.txt")
 ?>
 </body>
 </html>

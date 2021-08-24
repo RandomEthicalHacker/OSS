@@ -13,11 +13,11 @@
 
   //Sql query
 
-  if($_POST['btnsubmit'] == "save")
+  if($_POST['btnsubmit'] == "Save")
   {
     $sql = "UPDATE test set phone_number = '{$_POST["txttelno"]}', email = '{$_POST["txtemail"]}' where ID = '{$_COOKIE["id"]}'";
   }
-  if($_POST['btnsubmit'] == "delete")
+  if($_POST['btnsubmit'] == "Delete")
   {
     $sql = "DELETE from test where ID = '{$_COOKIE["id"]}'";
   }
@@ -27,10 +27,10 @@
 
   // Execute query
   $result = mysqli_query($conn, $sql);
-  if ($result)
-  {
-    echo "<script>window.location = 'http://localhost/OSS/Logbook6/wk6ex2.php'</script>";
-  }
+    if ($result)
+    {
+      echo "<script>window.location = 'http://localhost/OSS/Logbook6/wk6ex2.php'</script>";
+    }
   else
   {
     echo "Error updating record: " . mysqli_error($conn);

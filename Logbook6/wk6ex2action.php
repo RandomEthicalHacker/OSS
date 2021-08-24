@@ -34,7 +34,8 @@
 	Email :
 	<input type=text name=txtemail value="<? echo $row['email'] ?>" />
 	</br>
-	<input type=submit name=btnsubmit value="save"/>
-  <input type=submit name=btnsubmit value="delete"/>
+	<input type=submit name=btnsubmit value="Save"/>
+  <input type=submit name=btnsubmit value="Delete"/>
 </form>
 </body>
+</html>

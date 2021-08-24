@@ -1,8 +1,8 @@
 <html>
 <body>
 <?php
-	//Displaying month(number format), day, year(full) according to Greenwich Mean time
-	echo gmdate("d m Y");
+	//Displaying the amount of days passed since the start of the year according to Greenwich Mean time
+	echo gmdate("z");
 ?>
 </body>
 </html>

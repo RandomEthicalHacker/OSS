@@ -38,6 +38,7 @@
 	// Execute sql statement
 	$result = mysqli_query($conn, $sql);
 
+	//Display
 	if($result)
 	{
 		while ($row = mysqli_fetch_assoc($result))

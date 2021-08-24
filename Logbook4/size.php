@@ -5,12 +5,13 @@
   setcookie('selqty', $_POST['selqty']);
   */
 
+  //The session method
   session_start();
   $_SESSION['selqty'] = $_POST['selqty'];
 
 ?>
 <html>
-  <head><title>Select colour page</title></head>
+  <head><title>Select size page</title></head>
   <body>
     <form action="selectcolour.php"  method="post">
 	     Select the size of the <?php echo intval($_POST['selqty']) ?> widgets you are ordering
